@@ -6,14 +6,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = trim($_POST['title']);
     $description = trim($_POST['description']);
 
-    // Admins can choose status — users cannot
+    /
     if ($_SESSION['role'] === 'admin') {
         $status = $_POST['status'];
     } else {
-        $status = "Open"; // force default for users
+        $status = "Open"; 
     }
 
-    // Store which user created the case
+   
     $created_by = $_SESSION['user_id'];
 
     if ($title !== '' && $description !== '') {
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                           required></textarea>
             </div>
 
-            <!-- ADMIN-ONLY STATUS FIELD -->
+            
             <?php if ($_SESSION['role'] === 'admin'): ?>
                 <div>
                     <label style="font-weight:600; color:#003135;">Status</label>
@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </select>
                 </div>
             <?php else: ?>
-                <!-- USERS NEVER SEE STATUS -->
+                
                 <input type="hidden" name="status" value="Open">
             <?php endif; ?>
 
@@ -94,6 +94,7 @@ document.getElementById('caseForm').addEventListener('submit', function(e) {
     }
 });
 </script>
+
 
 
 
