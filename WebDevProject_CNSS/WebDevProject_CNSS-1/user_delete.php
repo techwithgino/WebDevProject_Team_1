@@ -17,3 +17,5 @@ if ($id) {
 
 header("Location: admin_portal.php");
 exit;
+
+
