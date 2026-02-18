@@ -2,7 +2,7 @@
 require 'auth_check.php';
 require 'db_connect.php';
 
-// NEW: Only admins can delete cases
+
 if ($_SESSION['role'] !== 'admin') {
     header("Location: cases_list.php");
     exit;
@@ -15,7 +15,7 @@ if (!$id) {
     exit;
 }
 
-// Fetch case info for display
+
 $stmt = $conn->prepare("SELECT title FROM cases WHERE id = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();
@@ -27,7 +27,7 @@ if (!$case) {
     exit;
 }
 
-// If user confirms deletion
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['confirm']) && $_POST['confirm'] === 'yes') {
         $delete = $conn->prepare("DELETE FROM cases WHERE id = ?");
@@ -80,5 +80,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
 <?php include 'admin_footer.php'; ?>
+
 
 
