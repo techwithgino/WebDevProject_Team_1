@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = trim($_POST['title']);
     $description = trim($_POST['description']);
 
-    /
+    
     if ($_SESSION['role'] === 'admin') {
         $status = $_POST['status'];
     } else {
@@ -94,6 +94,7 @@ document.getElementById('caseForm').addEventListener('submit', function(e) {
     }
 });
 </script>
+
 
 
 
