@@ -151,7 +151,7 @@ include 'admin_header.php';
                 <p>Submit a new case for follow-up and handling.</p>
                 <form action="submission_add_case.php" method="POST">
                     <input type="text" name="title" placeholder="Case Title" required>
-                    <textarea name="description" placeholder="Description" required></textarea>
+                    <textarea name="description" placeholder="Describe your case" required></textarea>
                     <button type="submit" class="btn-green">Submit</button>
                 </form>
             </div>
@@ -168,7 +168,7 @@ include 'admin_header.php';
 
             <div class="portal-card">
                 <h3>Send an Inquiry</h3>
-                <p>Send a question or ask for more information.</p>
+                <p>For more information, you can send questions below: .</p>
                 <form action="submission_add_inquiry.php" method="POST">
                     <input type="text" name="title" placeholder="Subject" required>
                     <textarea name="description" placeholder="Your question" required></textarea>
@@ -231,6 +231,7 @@ document.getElementById('userSearch')?.addEventListener('input', function() {
 </script>
 
 <?php include 'admin_footer.php'; ?>
+
 
 
 
