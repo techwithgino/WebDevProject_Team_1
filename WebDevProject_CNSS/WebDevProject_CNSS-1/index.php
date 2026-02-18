@@ -8,6 +8,7 @@
             to help businesses stay secure, connected, and efficient.
         </p>
         <a href="contactus.php" class="btn">Get in touch</a>
+        <a href="login.php" class="btn">Client Login</a>
     </div>
 </section>
 
