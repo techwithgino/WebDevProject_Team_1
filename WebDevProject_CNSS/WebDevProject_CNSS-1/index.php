@@ -7,7 +7,7 @@
             CNSS Tech delivers professional IT Network and System Services, along with expert IT Consultancy
             to help businesses stay secure, connected, and efficient.
         </p>
-        <a href="#contact" class="btn">Get in touch</a>
+        <a href="contactus.php" class="btn">Get in touch</a>
     </div>
 </section>
 
@@ -154,6 +154,11 @@
             <strong>Email:</strong> info@cnsstech.com<br />
             <strong>Phone:</strong> +358 41 740 8331
         </p>
+
+        <p class="contact-link">
+            <a href="contactus.php">Get in touch with us!</a>
+        </p>
+
     </div>
 </section>
 
