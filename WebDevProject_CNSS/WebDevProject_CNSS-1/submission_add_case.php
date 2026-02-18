@@ -18,3 +18,5 @@ $stmt->execute();
 header("Location: admin_portal.php?success=submitted_case");
 exit;
 ?>
+
+
