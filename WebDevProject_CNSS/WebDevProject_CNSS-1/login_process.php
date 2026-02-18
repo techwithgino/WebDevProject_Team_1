@@ -20,7 +20,6 @@ if ($result->num_rows === 1) {
         $_SESSION['username'] = $user['username'];
         $_SESSION['role'] = $user['role'];
 
-        // ⭐ ALWAYS send everyone to the portal
         header("Location: admin_portal.php");
         exit;
     }
@@ -28,6 +27,7 @@ if ($result->num_rows === 1) {
 
 header("Location: login.php?error=1");
 exit;
+
 
 
 
