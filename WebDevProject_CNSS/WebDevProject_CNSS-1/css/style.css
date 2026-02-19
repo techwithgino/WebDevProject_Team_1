@@ -543,7 +543,7 @@
     .portal-card{ min-height: unset; }
     }
 
-        .top-action-btn{
+    .top-action-btn{
     display: block;
     background: #00887A;
     color: #ffffff;
@@ -563,3 +563,61 @@
     .top-action-btn:visited{
     color: #ffffff;
     }
+
+    /*sign-up page*/
+    .signup-form {
+    background: #f8fafc;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    }
+
+    main {
+    flex : 1;
+    padding: 20px;
+    text-align: center;   
+    }
+
+    input {
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    }
+
+    .signup-form button{
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.45rem;
+    background: #00887A;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.95rem;
+    }
+
+    .signup-form button:hover{ background: #026f65; }
+
+    .checkbox-row {
+    margin-top: 10px;
+    }
+
+    .checkbox-line {
+    display: flex;
+    align-items: flex-start; /* aligns text properly */
+    gap: 8px;
+    cursor: pointer;
+    }
+
+    .checkbox-line input[type="checkbox"] {
+    margin-top: 3px; /* aligns checkbox with text */
+    }
+
+
